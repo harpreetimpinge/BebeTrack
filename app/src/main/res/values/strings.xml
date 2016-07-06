@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BebeTrack</string>
+    <string name="account_type">com.bebetrack.accounts.AccountType</string>
+</resources>
