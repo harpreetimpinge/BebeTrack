@@ -62,7 +62,7 @@ public class MainActivity extends AccountAuthenticatorActivity implements Callba
 
             this.setAnAccount(authData);
         } else {
-            Toast.makeText(this, "WTF: " + String.valueOf(code), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Error : " + String.valueOf(code), Toast.LENGTH_LONG).show();
         }
     }
 
@@ -70,7 +70,7 @@ public class MainActivity extends AccountAuthenticatorActivity implements Callba
 
     @Override
     public void onFailure(Call<AuthData> call, Throwable t) {
-        Toast.makeText(this, "Failure !!!", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Failure !!! " + t.getMessage(), Toast.LENGTH_LONG).show();
 
     }
 

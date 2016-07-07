@@ -7,7 +7,7 @@ import retrofit2.http.POST;
 
 public interface RetroInCallBack {
 
-    String ENDPOINT = "https://bebetrack.com/api/";
+    String ENDPOINT = "http://bebetrack.com/api/";
 
     @POST("create ")
     Call<AuthData> getAuthData();
